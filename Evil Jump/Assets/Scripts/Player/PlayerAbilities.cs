@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerAbilities : MonoBehaviour
 {
     public AirJump airJump;
     public MegaAirJump megaAirJump;
+    public Magic magic;
     public WallRun1 wallRun;
     public MegaJump megaJump;
 
@@ -15,17 +17,23 @@ public class PlayerAbilities : MonoBehaviour
     public bool hasInvincibility = false;
 
     private Rigidbody2D rb;
+    private Collider2D col;
+    private Vector3 startDist;
 
     private string airJumpKey = "AirJumped";
     private string megaAirJumpKey = "hasMegaAirJump";
     private string wallRunKey = "hasWallRun";
     private string wallslideKey = "wallSliding";
+    private string teleportation = "hasStaff";
 
     private string wallTag = "wall";
+    private bool dragging = false;
+    private float distance;
 
     // Start is called before the first frame update
     void Start(){
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
     }
 
     void OnEnable(){
@@ -37,10 +45,19 @@ public class PlayerAbilities : MonoBehaviour
     }
 
     void FixedUpdate(){
-        if(megaAirJump.hasThis){
+
+        if (magic.hasThis)
+        {
+            MagicStaff();  
+        }
+
+        
+        if (megaAirJump.hasThis){
             MegaAirJump();
         }
     }
+
+   
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag(wallTag)){ 
@@ -71,7 +88,8 @@ public class PlayerAbilities : MonoBehaviour
     
     void OnTriggerStay2D(Collider2D other){
         if(other.CompareTag(wallTag)){ // Lets the player run through walls if they have the wallRun ability
-            
+
+           
             if(!megaAirJump.hasThis && cameraFollow.state != CameraFollow.States.Falling){
                 cameraFollow.state = CameraFollow.States.Normal;
             }
@@ -141,6 +159,62 @@ public class PlayerAbilities : MonoBehaviour
         animator.SetBool(airJumpKey,true);
         animator.SetBool(wallRunKey,false);
     }
+
+    private void MagicStaff()
+    {
+        animator.SetBool(teleportation, true);
+        //magic.Duration();
+        rb.bodyType = RigidbodyType2D.Static;
+        if (col.OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
+        {
+            
+            OnMouseDown();
+            playerDrag();
+        }
+
+        if (magic.isdurationFinished)
+        {
+            dragging = false;
+            animator.SetBool(teleportation, false);
+            rb.bodyType = RigidbodyType2D.Dynamic;
+            magic.End();
+           
+        }
+    }
+
+    private void playerDrag()
+    {
+
+
+        //PlayerControls.hasStarted = false;
+
+           
+
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Vector3 rayPoint = ray.GetPoint(distance);
+
+            float velY = rb.velocity.y * 100;
+            float velX = rb.velocity.x * 100;
+          
+            Vector3 vel = new Vector3(velX, velY, 0);
+          
+            transform.position = Vector3.SmoothDamp(transform.position, rayPoint, ref vel, 0.001f);
+
+     
+    }
+
+    private void OnMouseDown()
+    {
+
+        
+
+        distance = Vector3.Distance(transform.position, Camera.main.transform.position);
+        dragging = true;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Vector3 rayPoint = ray.GetPoint(distance);
+        startDist = transform.position - rayPoint;
+    }
+
 
     // Lets player fly for a certian duration when they pick up MegaAirJump power up 
     private void MegaAirJump(){

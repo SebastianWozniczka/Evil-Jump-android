@@ -41,7 +41,7 @@ public class Collectable : ScriptableObject
 
     // Collectable type
     public enum Type{
-        Coin, GrayCoin, AirJump, Freezer, Replacer, MegaAirJump, WallRun, MegaJump, Magnet
+        Coin, GrayCoin, AirJump, Freezer, Replacer, MegaAirJump, WallRun, MegaJump, Magnet, Staff, Magic
     }
 
     void OnDisable(){

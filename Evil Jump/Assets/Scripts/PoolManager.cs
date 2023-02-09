@@ -7,7 +7,7 @@ public enum PoolObjectType{
     Platform01, Platform02, Platform03, Platform05, Platform06, TeleporterPlatform,
     Golds01, Golds02, Golds03, Golds04, Golds05, Enemy1, Enemy2, Enemy3, Enemy4, Enemy5,
     Wall01, Wall02, Wall03, Wall04,
-    Coin, AirJump, Freezer, MegaJump, Magnet, Replacer, MegaAirJump, GrayCoin, WallRun
+    Coin, AirJump, Freezer, MegaJump, Magnet, Replacer, MegaAirJump, GrayCoin, WallRun , Magic
 };
 
 [Serializable]
@@ -30,7 +30,7 @@ public class PoolManager : MonoBehaviour
     public List<PoolObjectType> collectableList = new List<PoolObjectType>{PoolObjectType.Coin, PoolObjectType.Coin, PoolObjectType.Coin, PoolObjectType.Coin,
     PoolObjectType.Coin, PoolObjectType.Coin, PoolObjectType.Coin, PoolObjectType.Coin, PoolObjectType.Coin, PoolObjectType.Coin, PoolObjectType.Coin,
     PoolObjectType.Coin, PoolObjectType.Coin, PoolObjectType.AirJump, PoolObjectType.AirJump, PoolObjectType.AirJump, PoolObjectType.Freezer,
-    PoolObjectType.Replacer, PoolObjectType.MegaJump, PoolObjectType.Magnet};
+    PoolObjectType.Replacer, PoolObjectType.MegaJump, PoolObjectType.Magnet, PoolObjectType.Magic};
 
 
     // Start is called before the first frame update

@@ -6,7 +6,9 @@ public class CollectableSpawner : MonoBehaviour
 {
     public bool canSpawnOnEnable = true;
     public MegaAirJump megaAirJump;
+    public Magic magic;
     static int megaAirJumpSpawncount = 0;
+    static int magicSpawncount = 0;
     [HideInInspector] public GameObject curCol;
 
     private PoolManager poolManager;
@@ -22,7 +24,14 @@ public class CollectableSpawner : MonoBehaviour
             if(rand == 0 && megaAirJumpSpawncount < megaAirJump.maxSpawnNum){
                 colType = PoolObjectType.MegaAirJump;
             }
-            else{
+
+            if (rand == 1 && magicSpawncount < magic.maxSpawnNum)
+            {
+                colType = PoolObjectType.Magic;
+            }
+
+            else
+            {
                 colType = poolManager.collectableList[Random.Range(0, poolManager.collectableList.Count)];
             }
 
@@ -54,10 +63,22 @@ public class CollectableSpawner : MonoBehaviour
                     poolManager.collectableList.Remove(PoolObjectType.MegaAirJump);
                 }
             }
+
+            if (colType == PoolObjectType.Magic)
+            {
+                magicSpawncount++;
+                if (magicSpawncount >= magic.maxSpawnNum)
+                {
+                    poolManager.collectableList.Remove(PoolObjectType.Magic);
+                }
+            }
+
         }
     }
 
     void OnDestroy(){
-        megaAirJumpSpawncount = 0; // Reset megaAirJumpSpawnCount
+        megaAirJumpSpawncount = 0; 
+        magicSpawncount = 0;
+        // Reset megaAirJumpSpawnCount
     }
 }
