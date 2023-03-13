@@ -7,27 +7,36 @@ public class CollectableSpawner : MonoBehaviour
     public bool canSpawnOnEnable = true;
     public MegaAirJump megaAirJump;
     public Magic magic;
+    public TimeLord timelord;
     static int megaAirJumpSpawncount = 0;
     static int magicSpawncount = 0;
+    static int timelordSpawncount = 0;
     [HideInInspector] public GameObject curCol;
 
     private PoolManager poolManager;
     
     void OnEnable(){
+
+
         poolManager = PoolManager.SharedInstance;
         if(transform.childCount == 0 && canSpawnOnEnable){
             PoolObjectType colType;
             
-            int rand = Random.Range(0, 20);
+            int rand = Random.Range(0, 21);
 
             // Determines to what collectable will be spawned
             if(rand == 0 && megaAirJumpSpawncount < megaAirJump.maxSpawnNum){
                 colType = PoolObjectType.MegaAirJump;
             }
 
-            if (rand == 1 && magicSpawncount < magic.maxSpawnNum)
+           else if (rand == 0 && magicSpawncount < magic.maxSpawnNum)
             {
                 colType = PoolObjectType.Magic;
+            }
+
+           else if (rand == 0 && timelordSpawncount < timelord.maxSpawnNum)
+            {
+                colType = PoolObjectType.TimeLord;
             }
 
             else
@@ -73,12 +82,22 @@ public class CollectableSpawner : MonoBehaviour
                 }
             }
 
+            if (colType == PoolObjectType.TimeLord)
+            {
+                timelordSpawncount++;
+                if (timelordSpawncount >= timelord.maxSpawnNum)
+                {
+                    poolManager.collectableList.Remove(PoolObjectType.TimeLord);
+                }
+            }
+
         }
     }
 
     void OnDestroy(){
         megaAirJumpSpawncount = 0; 
         magicSpawncount = 0;
+        timelordSpawncount = 0;
         // Reset megaAirJumpSpawnCount
     }
 }

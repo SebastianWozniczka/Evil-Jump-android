@@ -1752,9 +1752,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
+      propertyPath: magic
+      value: 
+      objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: timelord
+      value: 
+      objectReference: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: megaAirJump
+      value: 
+      objectReference: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530,
+        type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: canSpawnOnEnable
@@ -2057,7 +2075,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canSpawnOnEnable: 0
   megaAirJump: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530, type: 2}
-  magic: {fileID: 11400000, guid: 8b79421377c632a45839406fa596fc45, type: 2}
+  magic: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9, type: 2}
+  timelord: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095, type: 2}
   curCol: {fileID: 0}
 --- !u!1 &776355032
 GameObject:
@@ -2458,7 +2477,13 @@ MonoBehaviour:
       type: 3}
     container: {fileID: 970934278}
     pool: []
-  collectableList: 14000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000150000001500000015000000160000001900000017000000180000001d000000
+  - type: 30
+    amount: 1
+    prefab: {fileID: 5023754802738363904, guid: 181410e9b728bac4b91b4c6123f46a45,
+      type: 3}
+    container: {fileID: 2082249773}
+    pool: []
+  collectableList: 14000000140000001400000014000000140000001400000014000000140000001400000014000000140000001400000014000000150000001500000015000000160000001900000017000000180000001d0000001e000000
 --- !u!4 &827178947
 Transform:
   m_ObjectHideFlags: 0
@@ -2636,6 +2661,7 @@ Transform:
   - {fileID: 195196934}
   - {fileID: 1565266622}
   - {fileID: 970934279}
+  - {fileID: 2082249774}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3309,13 +3335,25 @@ PrefabInstance:
         type: 3}
       propertyPath: magic
       value: 
-      objectReference: {fileID: 11400000, guid: 8b79421377c632a45839406fa596fc45,
+      objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: timelord
+      value: 
+      objectReference: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095,
         type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: megaAirJump
+      value: 
+      objectReference: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530,
+        type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: canSpawnOnEnable
@@ -3621,13 +3659,25 @@ PrefabInstance:
         type: 3}
       propertyPath: magic
       value: 
-      objectReference: {fileID: 11400000, guid: 8b79421377c632a45839406fa596fc45,
+      objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: timelord
+      value: 
+      objectReference: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095,
         type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: megaAirJump
+      value: 
+      objectReference: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530,
+        type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: canSpawnOnEnable
@@ -3878,6 +3928,7 @@ MonoBehaviour:
   airJump: {fileID: 11400000, guid: 728173ddb2ebd0e4fb75f5564f59c73c, type: 2}
   megaAirJump: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530, type: 2}
   magic: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9, type: 2}
+  timeLord: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095, type: 2}
   wallRun: {fileID: 11400000, guid: 0a18da3c17398ba4a8ae00ab73e0c063, type: 2}
   megaJump: {fileID: 11400000, guid: 573ff1be71d1e0546951d2a103ea3edb, type: 2}
   animator: {fileID: 1556892014}
@@ -4043,9 +4094,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
+      propertyPath: magic
+      value: 
+      objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: timelord
+      value: 
+      objectReference: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: megaAirJump
+      value: 
+      objectReference: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530,
+        type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: canSpawnOnEnable
@@ -4716,13 +4785,25 @@ PrefabInstance:
         type: 3}
       propertyPath: magic
       value: 
-      objectReference: {fileID: 11400000, guid: 8b79421377c632a45839406fa596fc45,
+      objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: timelord
+      value: 
+      objectReference: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095,
         type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: megaAirJump
+      value: 
+      objectReference: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530,
+        type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: canSpawnOnEnable
@@ -4924,9 +5005,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
+      propertyPath: magic
+      value: 
+      objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: timelord
+      value: 
+      objectReference: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: megaAirJump
+      value: 
+      objectReference: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530,
+        type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: canSpawnOnEnable
@@ -5389,9 +5488,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
+      propertyPath: magic
+      value: 
+      objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: timelord
+      value: 
+      objectReference: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095,
+        type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: megaAirJump
+      value: 
+      objectReference: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530,
+        type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: canSpawnOnEnable
@@ -5472,6 +5589,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2082249773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082249774}
+  m_Layer: 0
+  m_Name: TimelordContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2082249774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082249773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1021393859}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106343464
 GameObject:
@@ -5663,13 +5811,24 @@ PrefabInstance:
         type: 3}
       propertyPath: magic
       value: 
-      objectReference: {fileID: 11400000, guid: 8b79421377c632a45839406fa596fc45,
+      objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
         type: 2}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: timelord
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
+        type: 3}
+      propertyPath: megaAirJump
+      value: 
+      objectReference: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530,
+        type: 2}
     - target: {fileID: 5608291145258147554, guid: 4720274675aae26479eb6e0ab2439d9d,
         type: 3}
       propertyPath: canSpawnOnEnable
@@ -6216,7 +6375,7 @@ PrefabInstance:
     - target: {fileID: 8872413145519157049, guid: 030159e64e04495438a5920b963e0ec0,
         type: 3}
       propertyPath: activePUs.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8872413145519157049, guid: 030159e64e04495438a5920b963e0ec0,
         type: 3}
@@ -6267,6 +6426,12 @@ PrefabInstance:
       propertyPath: activePUs.Array.data[4]
       value: 
       objectReference: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9,
+        type: 2}
+    - target: {fileID: 8872413145519157049, guid: 030159e64e04495438a5920b963e0ec0,
+        type: 3}
+      propertyPath: activePUs.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095,
         type: 2}
     - target: {fileID: 8872413145519157049, guid: 030159e64e04495438a5920b963e0ec0,
         type: 3}

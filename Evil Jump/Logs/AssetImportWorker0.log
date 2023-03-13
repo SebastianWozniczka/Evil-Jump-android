@@ -15,7 +15,7 @@ F:/Unity Projekty/Evil-Jump-android/Evil-Jump-android/Evil Jump
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62908
+60944
 Successfully changed project path to: F:/Unity Projekty/Evil-Jump-android/Evil-Jump-android/Evil Jump
 F:/Unity Projekty/Evil-Jump-android/Evil-Jump-android/Evil Jump
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ F:/Unity Projekty/Evil-Jump-android/Evil-Jump-android/Evil Jump
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 29.91 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 28.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.2.3f1 (32358a8527b4)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.2.3f1/Editor/Data/Resources/UnitySubsystems
@@ -55,82 +55,82 @@ Initialize engine version: 2021.2.3f1 (32358a8527b4)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Radeon RX 560 Series (ID=0x67ef)
+    Renderer: AMD Radeon RX 580 2048SP (ID=0x6fdf)
     Vendor:   ATI
-    VRAM:     4074 MB
-    Driver:   30.0.15021.1001
+    VRAM:     8170 MB
+    Driver:   31.0.14001.45012
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2021.2.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2021.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2021.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2021.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002585 seconds.
+Registered in 0.002518 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 27.03 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 30.07 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.471 seconds
+- Completed reload, in  0.490 seconds
 Domain Reload Profiling:
-	ReloadAssembly (471ms)
-		BeginReloadAssembly (58ms)
+	ReloadAssembly (490ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (348ms)
-			LoadAssemblies (56ms)
+		EndReloadAssembly (371ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (85ms)
+			SetupTypeCache (87ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (194ms)
+			RebuildScriptCaches (26ms)
+			SetupLoadedEditorAssemblies (207ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (27ms)
+				RefreshPlugins (30ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (117ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002558 seconds.
+Registered in 0.002587 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.42 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.806 seconds
+- Completed reload, in  0.964 seconds
 Domain Reload Profiling:
-	ReloadAssembly (807ms)
-		BeginReloadAssembly (143ms)
+	ReloadAssembly (965ms)
+		BeginReloadAssembly (142ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (584ms)
+		EndReloadAssembly (742ms)
 			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (155ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (248ms)
+			SetupTypeCache (216ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (296ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (171ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (209ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
@@ -138,12 +138,12 @@ Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.49 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.48 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1783 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (30.3 KB). Loaded Objects now: 2268.
-Memory consumption went from 99.8 MB to 99.8 MB.
-Total: 2.978300 ms (FindLiveObjects: 0.232400 ms CreateObjectMapping: 0.157400 ms MarkObjects: 2.556400 ms  DeleteObjects: 0.031400 ms)
+Unloading 1784 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (30.3 KB). Loaded Objects now: 2269.
+Memory consumption went from 100.0 MB to 100.0 MB.
+Total: 2.699600 ms (FindLiveObjects: 0.193100 ms CreateObjectMapping: 0.048600 ms MarkObjects: 2.434300 ms  DeleteObjects: 0.022900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -157,34 +157,58 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1116618.981864 seconds.
-  path: Assets/Prefabs/BigBullet.prefab
-  artifactKey: Guid(6f0a1186b260db24bb756568807c57eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BigBullet.prefab using Guid(6f0a1186b260db24bb756568807c57eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edc382314ef65e8f443c5cadec8def8f') in 0.126797 seconds 
+  Time since last request: 1377284.477665 seconds.
+  path: Assets/Animation/Player/player_MegaAirJump.anim
+  artifactKey: Guid(c02e27e549e1854418ba84e2be732b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/player_MegaAirJump.anim using Guid(c02e27e549e1854418ba84e2be732b1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c045be331cfdc5e1780b1338af476d') in 0.035976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.278506 seconds.
+  path: Assets/Animation/Player/Player_WallRun.anim
+  artifactKey: Guid(4ce0301d810196642a531576933bdc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player/Player_WallRun.anim using Guid(4ce0301d810196642a531576933bdc8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a8336a4f75fa4d93e95aabf25ad11a') in 0.004713 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.902037 seconds.
+  path: Assets/Animation/Player_Wizard.anim
+  artifactKey: Guid(af9da1b280fb3bb4c81cffb6dfb602a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/Player_Wizard.anim using Guid(af9da1b280fb3bb4c81cffb6dfb602a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89965a48b78db141b6def3f8185d6a46') in 0.005096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.996042 seconds.
+  path: Assets/Sprites/Player
+  artifactKey: Guid(5c2ad8721743e1b48b85a724ca1952de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player using Guid(5c2ad8721743e1b48b85a724ca1952de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ca161bdcd43a0c2a456e938c63196e3') in 0.001302 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.071968 seconds.
+  path: Assets/Sprites/Player/player.png
+  artifactKey: Guid(47d4d7b316cced743a6601c4e6f9643e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/player.png using Guid(47d4d7b316cced743a6601c4e6f9643e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '243620c33435c83237a4fa17473d1fd0') in 0.105404 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/Prefabs/Cloud.prefab
-  artifactKey: Guid(6b0f5a7605c900b43b7a533e0f52bf95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Cloud.prefab using Guid(6b0f5a7605c900b43b7a533e0f52bf95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78818c0f39fea36a1a9f123f1b57bc98') in 0.011540 seconds 
+  path: Assets/Sprites/Player/Player_RedEye.png
+  artifactKey: Guid(eb94eb8fbca49454db4c0adec7c1b57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/Player_RedEye.png using Guid(eb94eb8fbca49454db4c0adec7c1b57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '210f4a8319cdf1d84a6424eb55b85b2f') in 0.020867 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.415367 seconds.
-  path: Assets/Prefabs/Collectables/Coen.prefab
-  artifactKey: Guid(d5261a6fde63fe84fa590ea7ef12df89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Collectables/Coen.prefab using Guid(d5261a6fde63fe84fa590ea7ef12df89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa9bd5ada1c529ba1fb27b012548c36') in 0.023793 seconds 
+  Time since last request: 0.000023 seconds.
+  path: Assets/Sprites/Player/player_wallslide_form.png
+  artifactKey: Guid(f78a01ad140d7864789c64453d3eaf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/player_wallslide_form.png using Guid(f78a01ad140d7864789c64453d3eaf88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3e406c14f218296dfb69907e93e39e2') in 0.019668 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Prefabs/Collectables/MegaJump.prefab
-  artifactKey: Guid(4bff2efa48fdd2342ad30d01ec7282a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Collectables/MegaJump.prefab using Guid(4bff2efa48fdd2342ad30d01ec7282a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed4287ef80c13ab0c6a385acd39fb153') in 0.013137 seconds 
+  Time since last request: 0.867535 seconds.
+  path: Assets/Sprites/Player/Wizard
+  artifactKey: Guid(0f10dc97e71bee74191b83ade472d0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/Wizard using Guid(0f10dc97e71bee74191b83ade472d0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6096b553b0373293dec873133fcc785') in 0.009229 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Prefabs/Collectables/WallRun.prefab
-  artifactKey: Guid(79adcb3c5a227f6478781d9158d911ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Collectables/WallRun.prefab using Guid(79adcb3c5a227f6478781d9158d911ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '819c0a00b7ca64b7cd2aee1785a15710') in 0.018239 seconds 
+  Time since last request: 0.053685 seconds.
+  path: Assets/Sprites/Player/Wizard/player_wizard-2.png
+  artifactKey: Guid(102dfe311165a854bbdce8a4a1c2d060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Player/Wizard/player_wizard-2.png using Guid(102dfe311165a854bbdce8a4a1c2d060) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5edefb7c40fcdd455b9b5b04eef4d9da') in 0.021607 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

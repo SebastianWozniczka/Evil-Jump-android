@@ -7,6 +7,7 @@ public class PlayerAbilities : MonoBehaviour
     public AirJump airJump;
     public MegaAirJump megaAirJump;
     public Magic magic;
+    public TimeLord timeLord;
     public WallRun1 wallRun;
     public MegaJump megaJump;
 
@@ -25,6 +26,7 @@ public class PlayerAbilities : MonoBehaviour
     private string wallRunKey = "hasWallRun";
     private string wallslideKey = "wallSliding";
     private string teleportation = "hasStaff";
+    private string lord = "isTimelord";
 
     private string wallTag = "wall";
     private bool dragging = false;
@@ -51,13 +53,18 @@ public class PlayerAbilities : MonoBehaviour
             MagicStaff();  
         }
 
+        if (timeLord.hasThis)
+        {
+            TimeLord();
+        }
+
         
         if (megaAirJump.hasThis){
             MegaAirJump();
         }
     }
 
-   
+    
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.CompareTag(wallTag)){ 
@@ -179,6 +186,19 @@ public class PlayerAbilities : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Dynamic;
             magic.End();
            
+        }
+    }
+
+    private void TimeLord()
+    {
+        animator.SetBool(lord, true);
+        Time.timeScale = 0.7f;
+
+        if (timeLord.isdurationFinished)
+        {
+            animator.SetBool(lord, false);
+            Time.timeScale = 1f;
+            timeLord.End();
         }
     }
 

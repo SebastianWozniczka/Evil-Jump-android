@@ -3,7 +3,11 @@ guid: 6effdf65a41051544bf12458d166341b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - megaAirJump: {fileID: 11400000, guid: d088ae0e8d28bb44aad2ae864505c530, type: 2}
+  - magic: {fileID: 11400000, guid: 20346dba71f05554ba0df8aa17d30ac9, type: 2}
+  - timelord: {fileID: 11400000, guid: 96db376d5e2dccc479a90fc58bb6e095, type: 2}
+  - curCol: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

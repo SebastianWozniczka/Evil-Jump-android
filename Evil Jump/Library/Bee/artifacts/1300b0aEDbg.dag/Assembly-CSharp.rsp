@@ -352,6 +352,7 @@
 "Assets/Scripts/Collectables/MegaAirJump.cs"
 "Assets/Scripts/Collectables/MegaJump.cs"
 "Assets/Scripts/Collectables/Replacer.cs"
+"Assets/Scripts/Collectables/TimeLord.cs"
 "Assets/Scripts/Collectables/WallRun1.cs"
 "Assets/Scripts/ColorCycler.cs"
 "Assets/Scripts/Dash Assist/DashAssistImage.cs"

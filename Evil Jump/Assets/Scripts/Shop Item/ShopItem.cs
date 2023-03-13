@@ -22,7 +22,7 @@ public class ShopItem : ScriptableObject
     }
 
     public virtual void ResetShopFunc(){
-        collectable.ResetShopFunc();
+       // collectable.ResetShopFunc();
     }
 }
 
