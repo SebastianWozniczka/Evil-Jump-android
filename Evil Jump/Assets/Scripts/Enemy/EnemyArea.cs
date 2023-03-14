@@ -2,7 +2,7 @@
 
 public class EnemyArea : MonoBehaviour
 {   
-    public GameObject enemy;
+    public GameObject enemy,enemy04;
     public GameObject[] platformSpawnPoints;
     public PoolObjectType[] pTypes;
     public bool dontPutMiddle;
@@ -29,6 +29,7 @@ public class EnemyArea : MonoBehaviour
                 platform.SetActive(true);
             }
             else{
+                enemy04.transform.position = platformSpawnPoints[i].transform.position + new Vector3(1f,-3f,0f);
                 // SPAWN ENEMY
                 enemy.transform.position = platformSpawnPoints[i].transform.position + new Vector3(0f, 2.57f, 0f);
             }

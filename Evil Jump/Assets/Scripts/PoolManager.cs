@@ -5,7 +5,7 @@ using UnityEngine;
 // All pool objects
 public enum PoolObjectType{
     Platform01, Platform02, Platform03, Platform05, Platform06, TeleporterPlatform,
-    Golds01, Golds02, Golds03, Golds04, Golds05, Enemy1, Enemy2, Enemy3, Enemy4, Enemy5,
+    Golds01, Golds02, Golds03, Golds04, Golds05, Enemy1, Enemy2, Enemy3, Enemy4, Enemy5, Enemy04,
     Wall01, Wall02, Wall03, Wall04,
     Coin, AirJump, Freezer, MegaJump, Magnet, Replacer, MegaAirJump, GrayCoin, WallRun , Magic, TimeLord
 };
